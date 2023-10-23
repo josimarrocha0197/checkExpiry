@@ -1,2 +1,2 @@
-# Verificar o valor de "expire" da extensao. Caso esteja superior a 40, renova o registro da extenso
+# Verificar o valor de "expire" da extensao. Caso esteja superior ao valor definido na variavel 'expireReference' do script, renova o registro da extensao
 *   *   * * *   root (bash /root/scripts/checkExpire.sh)
