@@ -12,7 +12,7 @@ expireReference=40
 #	fi	
 #}
 
-mapfile -t pjsipRegistrations < <(docker exec astproxy asterisk -rx 'pjsip show registrations' | grep exp)
+mapfile -t pjsipRegistrations < <(docker exec astproxy asterisk -rx 'pjsip show registrations' | grep exp.)
 
 printf "$(date) - Quantidade de extensoes: ${#pjsipRegistrations[@]}\n" >> ${logFile}
 
